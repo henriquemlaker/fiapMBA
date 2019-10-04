@@ -17,7 +17,7 @@ public class TesteConta {
 		System.out.println(cp1.getSaldo());
 		System.out.println(cp2.getSaldo());
 		
-		Conta c1 = new Conta();
+		
 		
 	}
 	

@@ -2,7 +2,7 @@
 public class ContaCorrente extends Conta{	
 	
 	public String getTipo () {
-		return "Conta";
+		return "Conta Corrente";
 	}
 	
 	public void saque(double valor){
@@ -11,6 +11,12 @@ public class ContaCorrente extends Conta{
 	
 	public void deposita(double valor){
 		saldo += (valor-valor*0.1);
+	}
+
+	@Override
+	double getSaldo() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	 
 }

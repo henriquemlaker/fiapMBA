@@ -1,27 +1,15 @@
-
-public class Conta {
-	 private String tiular;
-	 protected double saldo;	
+public abstract class   Conta {
 	
-	double getSaldo() {
-		return saldo;
-	}
+	private String tiular;
+	protected double saldo;	
 	
-	public String getTipo () {
-		return "Conta";
-	}
+	abstract double getSaldo();
 	
-	void deposita (double valor) {
-		saldo += valor;
-	}
+	public abstract String getTipo();
 	
-	void saque(double valor) {		
-		if(saldo > 0 && saldo >= valor) {
-			saldo -= valor;
-			System.out.println("Saque realizado com sucesso!");
-		}else {
-			System.out.println("Saldo insulficiente");
-		}
-		
-	}
+	
+	abstract void deposita (double valor);
+	
+	
+	abstract void saque(double valor) ;
 }

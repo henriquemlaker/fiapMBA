@@ -14,7 +14,7 @@ public class Motorista extends Funcionario {
 		System.out.println("Trbalha Motorista");
 	}
 	
-	int getBonificacao() {
+	public int getBonificacao() {
 		return 0;
 	}
 
