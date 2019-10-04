@@ -1,14 +1,17 @@
 
 public class Conta {
-	private String tiular;
-	private double saldo;
-	private static int numeroConta;
+	 private String tiular;
+	 protected double saldo;	
 	
 	double getSaldo() {
 		return saldo;
 	}
 	
-	void deposita (int numero, double valor) {
+	public String getTipo () {
+		return "Conta";
+	}
+	
+	void deposita (double valor) {
 		saldo += valor;
 	}
 	
